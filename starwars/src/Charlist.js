@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 class Charlist extends React.Component {
   state = {
@@ -26,9 +26,9 @@ class Charlist extends React.Component {
       <ul>
         {this.state.starwarsChars.map((char, i) => {
           return (
-            <NavLink key={i + 1} to={`/people/${i + 1}`}>
-              <li>{char.name}</li>
-            </NavLink>
+            <Link key={i + 1} to={`/people/${i + 1}`}>
+              <h3>{char.name}</h3>
+            </Link>
           );
         })}
       </ul>
