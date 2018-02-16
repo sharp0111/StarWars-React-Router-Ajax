@@ -34,7 +34,7 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <h1 className="Header">React Wars</h1>
+          <h1 className="Header">Star Wars</h1>
           {/* <div>
             {this.state.starwarsChars.data}
           </div> */}
