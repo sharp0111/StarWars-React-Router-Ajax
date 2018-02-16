@@ -26,7 +26,7 @@ class Charlist extends React.Component {
       <ul>
         {this.state.starwarsChars.map((char, i) => {
           return (
-            <Link key={i + 1} to={`/people/${i + 1}`}>
+            <Link key={i+1} to={`/people/${i+1}`}>
               <h3>{char.name}</h3>
             </Link>
           );
