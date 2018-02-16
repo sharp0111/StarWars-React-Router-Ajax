@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Character from "./Character";
+
 import './App.css';
 
 class App extends Component {
@@ -28,9 +32,12 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <div>
+        {/* <div>
           {this.state.starwarsChars.data}
-        </div>
+        </div> */}
+        {this.state.starwarsChars.map(char => {
+            return <Character key={char.id} char={char} />;
+          })}
       </div>
     );
   }
